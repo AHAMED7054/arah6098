@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <title>Dubai Fast Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+   <center>
+    <div id="welcome"style="color: lime"><label>WELCOME!</label></div>
+    <div id="about"><label>We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</label></div>
+   </center> 
+    <div id="reserve"><label><u><p style="text-align: center;">RESERVATIONS</p></u><br></label>
+    <form  method="post">
+                Name:<input id="name" type="text" name="name" placeholder="Enter your name">
+                Contact: <input type="text" name="contact_no" pattern="[0-9]{10}" required>
+				Date: <input type="date" name="Date" >
+				Time: <input type="Time" name="Time">
+				Event: <select name="Event">
+					<option value="Birthday" selected="selected">Birthday</option>
+					<option value="Reception">Reception</option>
+					<option value="Wedding">Wedding</option>
+					<option value="Other">Other</option>
+				</select></br>
+                Members:<input id="members" type="text" name="Members">
+                Advance: <input type="number" name="Advance" min="100" required>
+				</br>
+                <input type="button" value="Submit">
+    </form>
+    <div id="main">
+        <div id="home" style="color:orange; font-family: calibri; font-size: 20pt; text-align: center ; text-transform: uppercase;"><label>home</label></div>
+        <div id="menu"><a href="menu.html"><label>MENU</label></a></div>
+        <div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div>
+        <div id="sign"><a href="sign_up.html"><label>SIGN UP</label></a></div>
+    </div>
+    <div id="Today_deals">
+			<h1 style="color:orangered; font-family: calibri; text-align: center; font-size: 28pt; text-transform: uppercase;">Discount Offer</h1>
+			<div id="family_deal">
+					<p>Chicken Biriyani 2-kg<br>Full Grill <br> Coco-cola 2-ltr <br><del> Price Rs.499</del><br><ins>Only Rs.299</ins></p>
+			</div>
+		</div>    
+  
+</body>
+</html>
