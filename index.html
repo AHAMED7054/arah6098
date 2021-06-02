@@ -2,17 +2,50 @@
 <head>
     <title>Dubai Fast Food</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body>
-   <center>
-    <div id="welcome"style="color: lime"><label>WELCOME!</label></div>
-    <div id="about"><label>We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</label></div>
-   </center> 
-    <div id="reserve"><label><u><p style="text-align: center;">RESERVATIONS</p></u><br></label>
-    <form  method="post">
+<body  bgcolor="pink">
+ <header >
+     <center>
+      <b style="color: green; font-size:x-large;">Welcome</b><br><b style="color: rgb(53, 36, 129); font-size:large;">To</b><br>
+      <b style="color: orangered; font-size:40pt;">DUBAI FAST FOOD</b>
+     </center>
+      <marquee behavior="scroll" direction="left" style="font-size: x-large;color: purple;">We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</marquee>   
+    
+ </header>
+ <nav>
+  <table style= "border-radius: 10px; width:100%; text-align: center;background-color: yellow; border: solid;" id="menu_bar" align="centre" >
+    <th>
+        <td><div id="home" style="background-color:darkgoldenrod; border-radius: 10px;"><label>HOME</label></div></td>
+    </th>
+    <th>
+         <td><div id="menu"><a href="menu.html" ><label>MENU</label></a></div></td>
+    </th>
+    <th>
+        <td> <div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div></td>
+    </th>
+    <th>
+        <td><div id="sign"><a href="sign_up.html"><label>SIGN UP</label></a></div> </td>
+    </th>
+  </table>
+ </nav>
+ <article style="text-align: center;">
+    <div id="Today_deals">
+			<h1 style="color:orangered; font-family: calibri; font-size:30px;">Today's Offer</h1>
+			<div id="family_deal">
+					<h3><p>Chicken Biriyani 2-kg<br>Full Grill <br> Coco-cola 2-ltr <br><del> Price Rs.499</del><br><ins>Only Rs.299</ins></p></h3>
+                </div>
+		</div>    
+</article> <br>
+<aside style="border-style: solid;text-align: center;padding: 10px 20px ;border-radius: 10px; word-spacing: 10px; background-color: bisque;>  
+     
+    
+         <form  method="post" >
+          <div id="reserve" style="color: rgb(4, 100, 28);">
+               <h2 style="text-align: center; color: brown;">Reservation</h2>
                 Name:<input id="name" type="text" name="name" placeholder="Enter your name">
                 Contact: <input type="text" name="contact_no" pattern="[0-9]{10}" required>
+                Email_ID:<input id="email" type="email" name="email_id"placeholder=" Enter your valid mail_id">
 				Date: <input type="date" name="Date" >
 				Time: <input type="Time" name="Time">
 				Event: <select name="Event">
@@ -21,23 +54,16 @@
 					<option value="Wedding">Wedding</option>
 					<option value="Other">Other</option>
 				</select></br>
-                Members:<input id="members" type="text" name="Members">
+                Members:<input id="members" type="number" name="Members">
                 Advance: <input type="number" name="Advance" min="100" required>
 				</br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" style="background-color: violet;">
+            </div>
     </form>
-    <div id="main">
-        <div id="home" style="color:orange; font-family: calibri; font-size: 20pt; text-align: center ; text-transform: uppercase;"><label>home</label></div>
-        <div id="menu"><a href="menu.html"><label>MENU</label></a></div>
-        <div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div>
-        <div id="sign"><a href="sign_up.html"><label>SIGN UP</label></a></div>
-    </div>
-    <div id="Today_deals">
-			<h1 style="color:orangered; font-family: calibri; text-align: center; font-size: 28pt; text-transform: uppercase;">Discount Offer</h1>
-			<div id="family_deal">
-					<p>Chicken Biriyani 2-kg<br>Full Grill <br> Coco-cola 2-ltr <br><del> Price Rs.499</del><br><ins>Only Rs.299</ins></p>
-			</div>
-		</div>    
   
+</aside>    
+<footer style="border-style: solid;text-align: center;border-radius: 10px;background-color: darkgoldenrod;">
+    <p style="color: rgb(4, 100, 28)" ;>&copy; All rights are reserved</p>
+</footer>
 </body>
 </html>

@@ -3,20 +3,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubai Fast Food</title>
+    <base href="index.html">
 </head>
-<body>
-    <div id="main">
-		<div id="home"><a href="index.html"><label>HOME</label></a></div>
-		<div id="menu"><a href="menu.html"><label>MENU</label></a></div>
-		<div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div>
-		<div id="sign" style="color: red; font-family: calibri; font-size: 18pt; text-align: center;"><label>SIGN UP</label></div>
-	</div>
+<body bgcolor="pink">
+<header >
+        <center>
+         <b style="color: green; font-size:x-large;">Welcome</b><br><b style="color: rgb(53, 36, 129); font-size:large;">To</b><br>
+         <b style="color: orangered; font-size:40pt;">DUBAI FAST FOOD</b>
+        </center>
+         <marquee behavior="scroll" direction="left" style="font-size: x-large;color: purple;">We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</marquee>   
+       
+</header>
+<nav>
+
+        <table style= "border-radius: 10px; width:100%; text-align: center;background-color: yellow; border: solid;" id="menu_bar" align="centre" >
+          <th>
+              <td><div id="home" ><a href="index.html"><label>HOME</label></a></div></td>
+          </th>
+          <th>
+               <td><div id="menu"><a href="menu.html"><label>MENU</label></a></div></td>
+          </th>
+          <th>
+              <td> <div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div></td>
+          </th>
+          <th>
+              <td><div id="sign"style="background-color:darkgoldenrod; border-radius: 10px;"><label>SIGN UP</label></a></div> </td>
+          </th>
+        </table>
+</nav>
+<section>
     <div id="login">
         <form method="post">
             <p><h3>Log_in:</h3></p>
             <input id="em" type="email" name="email" placeholder="Email" maxlength="80">
             <input id="pswd" type="password" name="password" placeholder="Password" minlength="7" maxlength="20">
-            <input type="button" value="Log_in">
+            <input type="button" value="Log_in" style="background-color: violet;">
         </form>
     </div>
     <div id="Sign_up">
@@ -25,8 +46,10 @@
             <input id="s_name" type="name" name="name" placeholder="Full Name">
 		    <input id="s_pswd" type="password" name="password" placeholder="Password" maxlength="20" minlength="8">
 		    <input id="s_email" type="email" name="email" placeholder="Email">
-            <input type="button" value="Register">
-
-
+            <input type="button" value="Register" style="background-color: violet;">
+</section>
+<footer style="border-style: solid;text-align: center;border-radius: 10px;background-color: darkgoldenrod;">
+    <p style="color: rgb(4, 100, 28)" ;>&copy; All rights are reserved</p>
+</footer>
 </body>
 </html>
